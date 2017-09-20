@@ -8,16 +8,16 @@ class BoostLambdaConan(ConanFile):
     description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_names = ["lambda"]
-    requires =  "Boost.Bind/1.65.1@bincrafters/stable", \
-                      "Boost.Config/1.65.1@bincrafters/stable", \
-                      "Boost.Core/1.65.1@bincrafters/stable", \
-                      "Boost.Detail/1.65.1@bincrafters/stable", \
-                      "Boost.Iterator/1.65.1@bincrafters/stable", \
-                      "Boost.Mpl/1.65.1@bincrafters/stable", \
-                      "Boost.Preprocessor/1.65.1@bincrafters/stable", \
-                      "Boost.Tuple/1.65.1@bincrafters/stable", \
-                      "Boost.Type_Traits/1.65.1@bincrafters/stable",\
-                      "Boost.Utility/1.65.1@bincrafters/stable"
+    requires =  "Boost.Bind/1.65.1@bincrafters/testing", \
+                      "Boost.Config/1.65.1@bincrafters/testing", \
+                      "Boost.Core/1.65.1@bincrafters/testing", \
+                      "Boost.Detail/1.65.1@bincrafters/testing", \
+                      "Boost.Iterator/1.65.1@bincrafters/testing", \
+                      "Boost.Mpl/1.65.1@bincrafters/testing", \
+                      "Boost.Preprocessor/1.65.1@bincrafters/testing", \
+                      "Boost.Tuple/1.65.1@bincrafters/testing", \
+                      "Boost.Type_Traits/1.65.1@bincrafters/testing",\
+                      "Boost.Utility/1.65.1@bincrafters/testing"
 
                       #bind3 config0 core2 detail5 iterator5 mpl5 preprocessor0 tuple4 type_traits3 utility5
 
