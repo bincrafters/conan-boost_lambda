@@ -1,35 +1,12 @@
 #include <iostream>
+#include <vector>
 #include <boost/lambda/lambda.hpp>
-#include <boost/lambda/bind.hpp>
-#include <boost/function.hpp>
-
-class A
-{
-public:
-	A(int a) :_a(a) {}
-	int get(int dummy) const
-	{
-		return _a + dummy;
-	}
-	void set(int a)
-	{
-		_a = a;
-	}
-private:
-	int _a;
-};
-
-int func(boost::function<int (int)> f, int i)
-{
-	return f(1);
-}
 
 int main()
 {
-	A a(3);
-	boost::function<int (int)> fGet = boost::lambda::bind(&A::get, a, boost::lambda::_1);
-	std::cout << (boost::lambda::_1 ->* &A::get)(&a)(1) << std::endl;
-	// Output: 4
-
+	std::vector<int> v(3);
+	for_each(v.begin(), v.end(), boost::lambda::_1 = 1);
+	for (std::vector<int>::iterator i = v.begin(); i != v.end(); ++i)
+		std::cout << *i << std::endl;
 	return 0;
 }
