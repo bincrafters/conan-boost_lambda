@@ -8,6 +8,7 @@ base = python_requires("boost_base/1.68.0@bincrafters/stable")
 
 class BoostLambdaConan(base.BoostBaseConan):
     name = "boost_lambda"
+    version = "1.68.0"
     url = "https://github.com/bincrafters/conan-boost_lambda"
     lib_short_names = ["lambda"]
     header_only_libs = ["lambda"]
